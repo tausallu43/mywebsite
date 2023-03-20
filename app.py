@@ -9,7 +9,7 @@ from email.message import EmailMessage
 
 load_dotenv(find_dotenv())
 app = flask.Flask(__name__, template_folder="templates/")
-app.config["DEBUG"] = True
+
 app.config["UPLOAD_FOLDER"] = "static/"
 app.secret_key = '123456789@tousif'
 
@@ -155,4 +155,4 @@ def s_success():
 
 # runing the application
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=True)
