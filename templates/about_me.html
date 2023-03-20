@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About_me</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="body">
+    <div class="container-sm-fullwidth p-0 m-0">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><i id="fu" class="fa fa-home"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a id="tab" class="nav-link " href="/about_me"
+                                onclick="alert('You are already in the about_me page thank you :)')">About
+                                me</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="/academics">Academics</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="/professional">Professional</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="https://calendly.com/tousif_ahamed/one_on_one"><i class="fa fa-calendar"
+                                    aria-hidden="true"></i></a>
+
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a id="tab" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown"><i id="tab" class="fa fa-address-book"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fa fa-phone" href="/call"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+                                <li><a class="dropdown-item fa fa-envelope"
+                                        href="/mail"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-sm-fullwidth">
+
+
+            <div class="row" style="background-color:rgb(42, 81, 86);border-radius: 25px; padding:25px">
+                <h1 class="fw-bolder" style="color:rgb(255, 255, 255);text-align:center">Personal Info </h1>
+                <br><br>
+                <div class="col-sm-3">
+                    <img src="{{url_for('static', filename='new_profile_tousif.jpeg')}}" class="rounded"
+                        alt="profile" width="70%">
+
+                </div>
+                <div class="col-sm-9">
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <td>First Name</td>
+                            <td>:</td>
+                            <td>Tousif Ahamed</td>
+                        </tr>
+
+                        <tr>
+                            <td>Last Name</td>
+                            <td>:</td>
+                            <td>Mohammed</td>
+                        </tr>
+                        <tr>
+                            <td>Specialization</td>
+                            <td>:</td>
+                            <td>Masters in Robotics Systems Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Natonality</td>
+                            <td>:</td>
+                            <td>Indian</td>
+                        </tr>
+                        <tr>
+                            <td>Birth Place</td>
+                            <td>:</td>
+                            <td>Nellore, Andhra pradesh</td>
+                        </tr>
+                      
+                        
+                    </table>
+
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <br><br>
+        <hr>
+        <h1 class="fw-bolder" style="color:rgb(42, 81, 86);text-align:center">Interests </h1>
+        <hr>
+        
+        <div class="container-sm-fullwidth">
+            <div class="row" style="background-color:rgb(249,149,88);border-radius: 25px; padding:25px">
+                <div class="col-sm-7">
+                    <p id="p" style="padding:20px;">
+                        I engross in developing real world software applications, which in returns increases my concentration
+                        power and also it's a self-satisfying work. I started my programming career with "Python" programming language
+                        which I learnt by building different self initiated projects. This programming career brought to me many exciting
+                        oppurtunities like internship in the B.M.W (Bavarian Motor Works) company, work student in the Eon research center. And, hoping for the
+                        many more exciting offers in the future.
+                        In almost every project I learnt many new things and eager to learn much more in the future. All these reasons paved my career path as a programmer.
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    
+                    <img class="rounded" src="{{url_for('static', filename='code_real.jpeg')}}" alt="coding" width="70%" style="padding-left: 25px;">
+
+                </div>
+            </div>
+            <br>
+            <div class="row" style=" padding:25px">
+                
+                <div class="col-sm-5">
+                    <br>
+                    
+                    <img class="rounded" src="{{url_for('static', filename='music.jpg')}}" alt="music" width="70%" style="padding-left: 25px;">
+
+                </div>
+                <div class="col-sm-7">
+                    <p id="p" style="padding:20px;">
+                        I am very much fond of music, it helps to control my anxeity and stress levels. I love listening Indian pop music, and recently started listening international music.
+                        Apart from this, I love singing indian songs and write my own songs which are still in my books. If I get time and opportunity in future I would love to release my own 
+                        songs. At the moment, the music in my songs are produced by using some specific softwares which I would like to replace it with my own created music in the future.  
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row" style="background-color:rgb(249,149,88);border-radius: 25px; padding:25px">
+                <div class="col-sm-7">
+                    <p id="p" style="padding:20px;">
+                        I got interest into cricket because of my dad, he is a state player and present district cricket team selector at my home land. He transfered his legacy to me and  
+                        I am contuning it, even in the Germany by playing to "koln cc" cricket club. I played for DCB (Deutscher Cricket Bund) tournment through this team in 2019, 2021 and 2022.
+                        To see my stats please, <a target="_blank" href="https://www.crichq.com/players/2776756/statistics">click here</a>
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    
+                    <img class="rounded" src="{{url_for('static', filename='cricket.jpg')}}" alt="cricket" width="70%" style="padding-left: 25px;">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm-fullwidth" style="position:relative;bottom:0vh;top:50vh">
+
+            <footer class="text-center text-lg-start"
+                style="background-color: rgb(42, 81, 86);border-top-left-radius:25px;border-top-right-radius:25px">
+                <div class="container d-flex justify-content-center py-5">
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88); border-radius: 50px;"
+                        href="https://github.com/tausallu43" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class='fa fa-github '
+                        data-bs-toggle="tooltip" title="Github"></i>
+                    </a>
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88);border-radius: 50px;"
+                        href="#" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class="fa fa-linkedin-square" data-bs-toggle="tooltip"
+                        title="Linkedin"></i>
+                    </a>
+                   
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88);border-radius: 50px;"
+                        href="https://twitter.com/intent/follow?screen_name=MdTausifahamed2" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class="fa fa-twitter " data-bs-toggle="tooltip" title="Twitter"></i>
+                    </a>
+                </div>
+    
+            </footer>
+    
+        </div>
+    </div>
+
+</body>
+
+</html>

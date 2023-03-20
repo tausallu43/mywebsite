@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Professional</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='table.css')}}">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="body">
+    <div class="container-sm-fullwidth">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" ><i
+                        id="fu" class="fa fa-home"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a id="tab" class="nav-link " href="/about_me">About
+                                me</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="/academics">Academics</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link "
+                                onclick="alert('You are already in the professional page, thank you :)')">Professional</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="https://calendly.com/tousif_ahamed/one_on_one"><i
+                                    class="fa fa-calendar" aria-hidden="true"></i></a>
+
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a id="tab" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown"><i id="tab" class="fa fa-address-book"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fa fa-phone" href="/call"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+                                <li><a class="dropdown-item fa fa-envelope" href="/mail"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h1 style="color:rgb(42, 81, 86);text-align:center;font-weight:bold">Download my resume</h1><br>
+        <div class="row m-0 p-0">
+            <div class="col-sm-6">
+                <label for="english" style="position:relative;left:25%">In English:</label>
+                <a id="english" type="button" class="btn btn-primary"
+                    href="{{url_for('static', filename='Tousif_Ahamed_Mohammed_En.pdf')}}"
+                    style="position:relative;left:25%" download>Download</a>
+                <br><br>
+            </div>
+            <div class="col-sm-6">
+                <label for="german" style="position:relative;left:25%">In German:</label>
+                <a id="german" type="button" class="btn btn-primary"
+                    href="{{url_for('static', filename='Tousif_Ahamed_Mohammed_De.pdf')}}"
+                    style="position:relative;left:25%" download>Download</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-sm m-0 p-0">
+            <table>
+                <thead style="border: 1px solid black">
+                    <tr>
+                        <th class="t">Company name</th>
+                        <th class="t">Time period</th>
+                        <th class="t">Role </th>
+                        <th class="t">Description</th>
+                        <th class="t">Software tools / Platforms</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="t">Autoblitz cologne</td>
+                        <td class="t">Oct,2022 - Present</td>
+                        <td class="t">Data engineer and web developer</td>
+                        <td class="t">Company's website development which includes transport booking system. Creating
+                            and maintaing user database, and building business dashboards.</td>
+                        <td class="t">Python, Html, Css, Javascript, Bootstrap 5, Rest API's, Flask, SQL, JSON, Power
+                            BI, and Digital oceans cloud platform.</td>
+
+                    </tr>
+                    <tr>
+                        <td class="t">E.on research center in collabration with Bosch</td>
+                        <td class="t">Oct, 2021 - May, 2022</td>
+                        <td class="t">Master thesis</td>
+                        <td class="t">It is a continuous model learning frame work which supports Model predictive
+                            control by providing system model. Frame work consists of ETL pipeline, automatic model
+                            selector, and continuous model evaluator. </td>
+                        <td class="t">Python, Pandas, Pyspark, TPOT AutoML framework, FMU API, Latex and various python
+                            visualization libraries.</td>
+                    </tr>
+                    <tr>
+                        <td class="t">E.on research center in collabration with Bosch</td>
+                        <td class="t">Jun, 2021 - Dec, 2021</td>
+                        <td class="t">Student Assistant</td>
+                        <td class="t">Automation for the code documentation, file convertions and worked in the Agentlib
+                            project.</td>
+                        <td class="t">Python, Sphnix, Mx-docs, Git-hub actions, Mark down and Jupyter notebooks.</td>
+                    </tr>
+                    <tr>
+                        <td class="t">B.M.W Munich</td>
+                        <td class="t">Mar, 2020 - Sep, 2020</td>
+                        <td class="t">Intern as Data Engineer w/ Data privacy and Machine Learning</td>
+                        <td class="t">Applying Data privacy techniques to the customer data. Data pipeline building and
+                            the data privacy python package development. During this period I also participated in the
+                            internal power hackthon, where I worked closely with data engineering and machine learning
+                            team to predict the life of the electric car battery.</td>
+                        <td class="t">Python, Jira (scrum), Confluence, Pyspark, Data privacy algorithms, Rest API's,
+                            AWS (S3 bucket, boto,
+                            Sagemaker, EC2-instances), Pandas, Numpy, Tensor flow, Matplotlib and Seaborn.</td>
+                    </tr>
+                    <tr>
+                        <td class="t">Department of Sanitary Mechanics of the Indian Municipal Corporation, India</td>
+                        <td class="t">Jul, 2017 - Aug, 2018</td>
+                        <td class="t">Data Engineer and Analytics </td>
+                        <td class="t">Extracting Data from Machines using API's, managing the data modelling, and
+                            databases. Analysing the wear and tear of machines.</td>
+                        <td class="t">Python, SQL, Rest API's, Supervised and Unsupervised Machine learning.</td>
+
+                    </tr>
+                    <tr>
+                        <td class="t">JNTU Pulivendula</td>
+                        <td class="t">Jul, 2016 - Dec, 2016</td>
+                        <td class="t">Bachelor thesis</td>
+                        <td class="t">BOGSAS(Bicycle Operated Groundnut Stripper And Shell remover) is a mechanical
+                            device which cuts the groundnut from plants and reomoves the shells of the groundnut using
+                            the bicycle power. Its an innovative project completed under 250 euros and acheived 85-90%
+                            of efficency.</td>
+                        <td class="t">Data analysis through SQL, Machine Design and a lot of mechanical calculations.
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td class="t">Toyama Controls and System Private Limited,India</td>
+                        <td class="t">May, 2015 - Feb, 2016</td>
+                        <td class="t">Data analyst</td>
+                        <td class="t">Managing Database, preparing dashboards</td>
+                        <td class="t">SQL, CAD desgin softwares and Power BI</td>
+
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="container-sm-fullwidth" style="position:relative;bottom:0vh;top:50vh">
+
+            <footer class="text-center text-lg-start"
+                style="background-color: rgb(42, 81, 86);border-top-left-radius:25px;border-top-right-radius:25px">
+                <div class="container d-flex justify-content-center py-5">
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88); border-radius: 50px;"
+                        href="https://github.com/tausallu43" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class='fa fa-github ' data-bs-toggle="tooltip" title="Github"></i>
+                    </a>
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88);border-radius: 50px;" href="#" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class="fa fa-linkedin-square" data-bs-toggle="tooltip"
+                            title="Linkedin"></i>
+                    </a>
+
+                    <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                        style="background-color: rgb(249,149,88);border-radius: 50px;"
+                        href="https://twitter.com/intent/follow?screen_name=MdTausifahamed2" target="_blank">
+                        <i style="color:rgb(0, 0, 0)" class="fa fa-twitter " data-bs-toggle="tooltip"
+                            title="Twitter"></i>
+                    </a>
+                </div>
+
+            </footer>
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+</html>
