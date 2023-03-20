@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <link rel="icon" type="image" href="{{url_for('static', filename='new_profile_tousif.jpeg')}}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="body">
+<nav class="navbar navbar-expand-sm bg-light navbar-light "
+            >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" ><i id="fu"
+                        class="fa fa-home"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a id="tab" class="nav-link " href="/about_me"  >About
+                                me</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="/academics"
+                                >Academics</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="/professional"
+                                >Professional</a>
+
+                        </li>
+                        <li class="nav-item ">
+
+                            <a id="tab" class="nav-link " href="https://calendly.com/tousif_ahamed/one_on_one"
+                                ><i class="fa fa-calendar" aria-hidden="true" ></i></a>
+
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a id="tab" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i id="tab" class="fa fa-address-book"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fa fa-phone" href="/call"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+                                <li><a class="dropdown-item fa fa-envelope"
+                                        href="/mail"
+                                        style="text-align: center;font-size: 25px;"></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <br><br>
+    <h2 style="text-align:center;color:rgb(42, 81, 86);font-weight:bold">You have successfully scheduled meeting with me <img src="{{url_for('static', filename='success.jpg')}}"
+        width="7%" height="7%">. Thank you so much for the meeting and I am eager to meet you soon <img src="{{url_for('static', filename='smile.png')}}"
+        width="5%" height="5%">.</h2><br><br>
+
+    <div class="container-sm-fullwidth" style="position:relative;bottom:0vh;top:50vh">
+
+        <footer class="text-center text-lg-start"
+            style="background-color: rgb(42, 81, 86);border-top-left-radius:25px;border-top-right-radius:25px">
+            <div class="container d-flex justify-content-center py-5">
+                <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                    style="background-color: rgb(249,149,88); border-radius: 50px;"
+                    href="https://github.com/tausallu43" target="_blank">
+                    <i style="color:rgb(0, 0, 0)" class='fa fa-github '
+                    data-bs-toggle="tooltip" title="Github"></i>
+                </a>
+                <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                    style="background-color: rgb(249,149,88);border-radius: 50px;"
+                    href="#" target="_blank">
+                    <i style="color:rgb(0, 0, 0)" class="fa fa-linkedin-square" data-bs-toggle="tooltip"
+                    title="Linkedin"></i>
+                </a>
+               
+                <a type="button" class="btn btn-primary btn-lg btn-floating mx-3"
+                    style="background-color: rgb(249,149,88);border-radius: 50px;"
+                    href="https://twitter.com/intent/follow?screen_name=MdTausifahamed2" target="_blank">
+                    <i style="color:rgb(0, 0, 0)" class="fa fa-twitter " data-bs-toggle="tooltip" title="Twitter"></i>
+                </a>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>
